@@ -14,6 +14,7 @@ hidden:
 maxdepth: 1
 ---
 
+navod
 usage
 reference
 contributing
