@@ -10,7 +10,7 @@
 
 1.	Zaregistrujte se na [GitHubu](https://github.com), ideálně přes univerzitní účet (pro případné uplatňování studentských slev)
 2.	Personalizaci po registraci můžete viceméně ignorovat a prostě odklikat. Na konci ale zvolte **Continue using GitHub for free**
-3.	Jděte na [repozitář se šablonou]9https://github.com/ARostekMU/ultimatni-prirucka)
+3.	Jděte na [repozitář se šablonou](https://github.com/ARostekMU/ultimatni-prirucka)
 4.	Klikněte na **Fork** a poté **Create Fork**
 5.	Jděte na [GitPod](https://www.gitpod.io/), klikněte na **Login** a **Continue with GitHub**
 6.	Po otevření okna zvolte **Authorize gitpod-io**
