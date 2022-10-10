@@ -1,5 +1,6 @@
 from collections import namedtuple
 from dataclasses import dataclass
+from collections.abc import MutableSequence
 
 
 @dataclass(frozen=True)
@@ -16,9 +17,18 @@ class ToggleCard(Card):
 #Card = namedtuple("Card", ["colour", "value"])
 
 
-class Deck:
+class Deck(MutableSequence):
     values = [str(n) for n in range(2, 11)] + list('JQKA')
     colours = ['diamond', 'spade', 'club', 'heart']
+
+    def __delitem__(self, i):
+        del self._cards[i]
+    
+    def __setitem__(self, i, o):
+        self._cards[i] = o
+
+    def insert(self, i, o):
+        self._cards.insert(i, o)
 
     def __init__(self, card_factory=Card):
         self._cards = [

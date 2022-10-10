@@ -39,6 +39,22 @@ def test_card_is_immutable():
     with pytest.raises(FrozenInstanceError):
         card.colour = "b2"  # TODO: improve
 
+
 def test_use_toggle_cards():
     deck = Deck(card_factory=ToggleCard)
     assert deck[0].is_revealed == False
+
+
+def test_pop_card():
+    deck = Deck()
+    card = deck.pop()
+    assert card == Card(colour='heart', value='A')
+    assert len(deck) == 51
+
+
+def test_remove_card():
+    deck = Deck()
+    card = Card(colour='heart', value='A')
+    deck.remove(card)
+    assert len(deck) == 51
+    assert card not in deck
