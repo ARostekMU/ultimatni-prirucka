@@ -1,7 +1,13 @@
 from collections import namedtuple
+from dataclasses import dataclass
+
+@dataclass(frozen=True)
+class Card:
+    colour: str
+    value: str
 
 
-Card = namedtuple("Card", ["colour", "value"])
+#Card = namedtuple("Card", ["colour", "value"])
 
 
 class Deck:
