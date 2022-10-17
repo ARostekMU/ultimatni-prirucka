@@ -17,7 +17,7 @@ class ToggleCard(Card):
 #Card = namedtuple("Card", ["colour", "value"])
 
 
-class DeckAAAA(MutableSequence):
+class Deck(MutableSequence):
     values = [str(n) for n in range(2, 11)] + list('JQKA')
     colours = ['diamond', 'spade', 'club', 'heart']
 
